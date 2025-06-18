@@ -1,5 +1,4 @@
 # calculator.py
-import numpy
 
 
 class Calculator:
@@ -7,7 +6,7 @@ class Calculator:
 
     def add(self, a, b):
         """Return the sum of a and b."""
-        return np.add(a + b)
+        return a + b
 
     def subtract(self, a, b):
         """Return the difference of a and b."""
@@ -23,6 +22,6 @@ class Calculator:
         Raises:
             ValueError: If b is zero.
         """
-        #        if b == 0:
-        #            raise ValueError("Cannot divide by zero")
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
         return a / b
