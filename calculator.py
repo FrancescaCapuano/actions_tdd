@@ -1,4 +1,5 @@
 # calculator.py
+import numpy
 
 
 class Calculator:
@@ -6,7 +7,7 @@ class Calculator:
 
     def add(self, a, b):
         """Return the sum of a and b."""
-        return a + b
+        return np.add(a + b)
 
     def subtract(self, a, b):
         """Return the difference of a and b."""
