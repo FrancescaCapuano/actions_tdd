@@ -12,7 +12,7 @@ import sys
 sys.path.insert(0, os.path.abspath("../../"))
 
 project = "tdd_calc"
-copyright = "2025, FrancescaCapuano"
+copyright = "2025, FrancescaCapuano "
 author = "Francesca Capuano"
 release = "0.0.1"
 
