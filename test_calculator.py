@@ -3,6 +3,7 @@
 import unittest
 from calculator import Calculator
 
+
 class TestCalculator(unittest.TestCase):
     """Test cases for the Calculator class."""
 
@@ -32,6 +33,7 @@ class TestCalculator(unittest.TestCase):
         """Test the divide method."""
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(-6, 3), -2)
+        self.assertEqual(self.calc.divide(-6, 0), -2)
         self.assertAlmostEqual(self.calc.divide(5, 2), 2.5)
 
     def test_divide_by_zero(self):
@@ -39,5 +41,6 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.calc.divide(10, 0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
